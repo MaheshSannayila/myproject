@@ -252,9 +252,94 @@ m="maheshsannaila"
 
 
 
+# # checking given age elgible or not 
+# age=int(input())
+# if age>=18:
+#     print("he is elgible for vote")
+# else:
+#     print("he is not elgible for vote")
+
+
+# #check given number positive or negitive
+# given_num=int(input())
+# if given_num>=0:
+#     print(given_num,"is positive number")
+# else:
+#     print(given_num,"is negitive number")
+
+
+# a=int(input())
+# b=int(input())
+# c=(a==b)
+# if c:
+#     print("square")
+# else:
+#     print("not a square")
+
+
+
+# given_range=int(input())
+# for i in range(1,given_range+1):
+#     if i%2==0:
+#         print("{0} is even".format(i))
+#     else:
+#         print("{}is odd".format(i))   
+
+
+# a=input()
+# for i in range(5):
+#     print(a)
+
+# a=input()
+# b=int(input())
+# length=len(a)
+# n=b%length
+# print(n)
+# first_string=a[n:]
+# second_string=a[:n]
+# print(first_string+second_string)
+
 a=int(input())
-for i in range(a):
-    print(i)
-    for j in range(1,i+1):
-        print(i)
+# #rightangle triangle
+# for i in range(1,a+1):
+#     print("* "*i)
+
+# #leftangle triangle
+# for i in range(1,a+1):
+#     left_space=" "*(a-i)
+#     print(left_space+left_space+"* "*i)
+
+# #triangle
+# for i in range(1,a+1):
+#     left_space=" "*(a-i)
+#     print(left_space+"* "*i)
+
+
+# #left+rightangle triangles
+# for i in range(1,a+1):
+#     left_space="  "*(a-i)
+#     print("* "*i+left_space+left_space+"* "*i)
+
+# #diamond shape
+# for i in range(1,a+1):
+#   left_space=" "*(a-i) 
+#   print(left_space+"* "*i)
+# for j in range(1,a):
+#   left_space=" "*j
+#   print(left_space+"* "*(a-j))
+
+
+#num pattren
+
+#leftangle triangle
+# for i in range(1,a+1):
+#     print((str(i)+" ")*i)
+
+
+# for i in range(1,a+1):
+#     pattren=""
+#     for j in range(1,i+1):
+#         # print(str(j),sep=" ")
+#         pattren+=str(j)
+#     print(pattren)
         
