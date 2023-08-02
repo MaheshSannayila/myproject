@@ -145,3 +145,31 @@ a=int(input())
 #         pattren+=str(j)
 #     print(pattren)
         
+
+# membership operator
+
+# a=["mahesh","suresh","ganesh","ramesh"]
+# b=input()
+# if b in a:
+#     print(True)
+# else:
+#     print(False)
+
+# c=input()
+# if c not in a:
+#     print(True)
+# else:
+#     print(False)
+
+#space removing
+# a=input()
+# print(a)
+# print(a.strip())
+# print(a.rstrip())
+# print(a.lstrip())
+# b=input()
+# print(a.count(b))
+# print(a.find(b))
+# print(a.index(b))
+
+# print(a[3:1:1])
