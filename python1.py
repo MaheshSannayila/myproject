@@ -173,3 +173,4 @@ a=int(input())
 # print(a.index(b))
 
 # print(a[3:1:1])
+#print(a[2:5:-1])
