@@ -1,176 +1,83 @@
+#  palindrome
+a=input()
+revers_a=a[::-1]
+if a==revers_a:
+    print(a,"is palindrpme")
+else:
+    print(a,"is not palindrome")
 
-#conditions
-# a = int(input())
-# b = int(input())
-# if b > a:
-#   print("b is greater than a")
+#  vowel or consonent
+a=input()
+if a=="a" or a=="e" or a=="i" or a=="o" or a=="u":
+    print("vowel")
+else:
+    print("consonent")
 
-# m=int(input())
-# if 35<= m <=100:
-#     print("Pass")
-# elif m>100:
-#     print("Invalid Marks")
-# else:
-#     print("Fail")
+#  replace string
+a=input()
+print(a.replace(" ","-"))
 
+#  remove charecter in string
+a=input()
+for i in a:
+    if i.isalpha():
+        r=(a.replace(i,""))
+        a=r
+print(a)
 
-# a=["mahesh","suresh","venu","ajay","srinadh"]
-# b=input()
-# if b in a:
-#     print(True)
-# else:
-#     print(False)
-    
+# checking alphabets integters alphabets
+string_a=input()
+alphabets=0
+integers=0
+sp_charecters=0
+for i in string_a:
+    if i.isalpha():
+        alphabets+=1
+    elif i.isdigit():
+        integers+=1
+    else:
+        sp_charecters+=1
+print(alphabets)
+print(integers)
+print(sp_charecters)      
 
-# a=int(input())
-# if a%2==0:
-#     print(a,"is even number")
-# else:
-#     print(a,"is odd number")
+remove spaces
+a=input()
+print(a.replace(" ",""))
 
+# Write a python program to find sum of integers in the string.
+a=input()
+count=0
+for i in a:
+    if i.isdigit():
+        count+=int(i)
+print(count)
 
+# Write a python program to Remov e Repeated Character from String.
+a="mahesh"
 
-# #leap year
-
-# l=int(input())
-# if l%400==0:
-#     print(l,"is a leap year")
-# elif l%4==0 and l%100!=0:
-#     print(l,"is a leap year")
-# else:
-#     print(l,"is not a leap year")
-
-
-# a=int(input())
-# b=int(input())
-# c=int(input())
-
-# if a>b and a>c:
-#     print("a is bigger")
-# elif b>c and b>a:
-#     print("b is bigger")
-# else:
-#     print("c is bigger")
-
-
-
-# # checking given age elgible or not 
-# age=int(input())
-# if age>=18:
-#     print("he is elgible for vote")
-# else:
-#     print("he is not elgible for vote")
-
-
-# #check given number positive or negitive
-# given_num=int(input())
-# if given_num>=0:
-#     print(given_num,"is positive number")
-# else:
-#     print(given_num,"is negitive number")
-
-
-# a=int(input())
-# b=int(input())
-# c=(a==b)
-# if c:
-#     print("square")
-# else:
-#     print("not a square")
+for i in a:
+    c=a.count(i)
+    if c>1:
+       remove_s =a.replace(i,"")
+       remove_s+=i
+print(remove_s)
 
 
 
-# given_range=int(input())
-# for i in range(1,given_range+1):
-#     if i%2==0:
-#         print("{0} is even".format(i))
-#     else:
-#         print("{}is odd".format(i))   
+# .Write a Program to Sort the Characters of the String and First Alphabet Symbols followed by Numeric Values.
 
+a="mahesh"
+sorted_s=sorted(a)
+sorted_string=""
+for i in sorted_s:
+    sorted_string+=i
+print(sorted_string)
 
-# a=input()
-# for i in range(5):
-#     print(a)
-
-# a=input()
-# b=int(input())
-# length=len(a)
-# n=b%length
-# print(n)
-# first_string=a[n:]
-# second_string=a[:n]
-# print(first_string+second_string)
-
-a=int(input())
-# #rightangle triangle
-# for i in range(1,a+1):
-#     print("* "*i)
-
-# #leftangle triangle
-# for i in range(1,a+1):
-#     left_space=" "*(a-i)
-#     print(left_space+left_space+"* "*i)
-
-# #triangle
-# for i in range(1,a+1):
-#     left_space=" "*(a-i)
-#     print(left_space+"* "*i)
-
-
-# #left+rightangle triangles
-# for i in range(1,a+1):
-#     left_space="  "*(a-i)
-#     print("* "*i+left_space+left_space+"* "*i)
-
-# #diamond shape
-# for i in range(1,a+1):
-#   left_space=" "*(a-i) 
-#   print(left_space+"* "*i)
-# for j in range(1,a):
-#   left_space=" "*j
-#   print(left_space+"* "*(a-j))
-
-
-#num pattren
-
-#leftangle triangle
-# for i in range(1,a+1):
-#     print((str(i)+" ")*i)
-
-
-# for i in range(1,a+1):
-#     pattren=""
-#     for j in range(1,i+1):
-#         # print(str(j),sep=" ")
-#         pattren+=str(j)
-#     print(pattren)
-        
-
-# membership operator
-
-# a=["mahesh","suresh","ganesh","ramesh"]
-# b=input()
-# if b in a:
-#     print(True)
-# else:
-#     print(False)
-
-# c=input()
-# if c not in a:
-#     print(True)
-# else:
-#     print(False)
-
-#space removing
-# a=input()
-# print(a)
-# print(a.strip())
-# print(a.rstrip())
-# print(a.lstrip())
-# b=input()
-# print(a.count(b))
-# print(a.find(b))
-# print(a.index(b))
-
-# print(a[3:1:1])
-#print(a[2:5:-1])
+# Write a python program to check string is anagrams or not in Python.
+a=input()
+b=input()
+if sorted(a)==sorted(b):
+    print("anagram sstrings")
+else:
+    print("not anagram strigs")
