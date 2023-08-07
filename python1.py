@@ -81,3 +81,5 @@ if sorted(a)==sorted(b):
     print("anagram sstrings")
 else:
     print("not anagram strigs")
+
+#completed 
