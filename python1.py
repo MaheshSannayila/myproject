@@ -1,85 +1,41 @@
-#  palindrome
-a=input()
-revers_a=a[::-1]
-if a==revers_a:
-    print(a,"is palindrpme")
-else:
-    print(a,"is not palindrome")
+# a=[[1,1,1],[22,4,3],[5,6,7]]
+# for i in a:
+#     for j in range(len(i)):
+#         print(i[j],end="")
 
-#  vowel or consonent
-a=input()
-if a=="a" or a=="e" or a=="i" or a=="o" or a=="u":
-    print("vowel")
-else:
-    print("consonent")
+# extend method
+# a=input().split()
+# b=input().split()
+# a.extend(b)
+# print(a)
 
-#  replace string
-a=input()
-print(a.replace(" ","-"))
+# #sum of list
+# a=input().split()
+# int_list= []
+# for i in a:
+#     int_list.append(int(i))
+# print(sum(int_list))
 
-#  remove charecter in string
-a=input()
-for i in a:
-    if i.isalpha():
-        r=(a.replace(i,""))
-        a=r
-print(a)
+# #even nums in list
+# a=input().split()
+# for i in a:
+#     if int(i)%2==0:
+#         print(i)
 
-# checking alphabets integters alphabets
-string_a=input()
-alphabets=0
-integers=0
-sp_charecters=0
-for i in string_a:
-    if i.isalpha():
-        alphabets+=1
-    elif i.isdigit():
-        integers+=1
-    else:
-        sp_charecters+=1
-print(alphabets)
-print(integers)
-print(sp_charecters)      
+# #odd nums in list
+# a=input().split()
+# for i in a:
+#     if int(i)%2!=0:
+#         print(i)
 
-remove spaces
-a=input()
-print(a.replace(" ",""))
+# #remove value given index
+# a=[1,2,3,4,5,6,7]
+# b=int(input())
+# a.remove(a[b])
+# print(a)
 
-# Write a python program to find sum of integers in the string.
-a=input()
-count=0
-for i in a:
-    if i.isdigit():
-        count+=int(i)
-print(count)
-
-# Write a python program to Remov e Repeated Character from String.
-a="mahesh"
-
-for i in a:
-    c=a.count(i)
-    if c>1:
-       remove_s =a.replace(i,"")
-       remove_s+=i
-print(remove_s)
+# a=input().split()
+# b=input().split()
+# print(a==b)
 
 
-
-# .Write a Program to Sort the Characters of the String and First Alphabet Symbols followed by Numeric Values.
-
-a="mahesh"
-sorted_s=sorted(a)
-sorted_string=""
-for i in sorted_s:
-    sorted_string+=i
-print(sorted_string)
-
-# Write a python program to check string is anagrams or not in Python.
-a=input()
-b=input()
-if sorted(a)==sorted(b):
-    print("anagram sstrings")
-else:
-    print("not anagram strigs")
-
-#completed 
