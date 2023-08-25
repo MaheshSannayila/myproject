@@ -61,6 +61,10 @@ for i,j in d1.items():
     else:
         m=0
     d3[i]=m+j
+# print(d3)
+for i,j in d2.items():
+    if(i not in d1):
+        d3[i]=j
 print(d3)
 
 # 8.Write a Python program to access dictionary key's element by index.
