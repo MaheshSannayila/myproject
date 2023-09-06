@@ -56,5 +56,5 @@ def check_odd(n):
         else:
             return True
 list_1=[1,2,3,4,5,6,7,8,9,10,23,45,6,7,13]
-prime_nums= filter(check_odd,list_1)
-print(list(prime_nums))
+odd_nums= filter(check_odd,list_1)
+print(list(odd_nums))
