@@ -1,7 +1,6 @@
 def get_employe_details(employe_name,domain,emp_id,email):
 
-    a={"suresh":{"name":"suresh","domain":"testing","emp_id":182729,"email":"suresh@gmail.com"}}
-
+    a={}
     a[employe_name]={"employe_name":employe_name,"domain":domain,"emp_id":emp_id,"email":email}
     print(" ")
     print(" ")
